@@ -12,9 +12,6 @@ from pylatexenc.latex2text import LatexNodes2Text
 import unicodedata
 
 
-def normalize(result):
-    return result   
-
 def tex_to_unicode(data):
     stripped = data.strip()
 
@@ -50,7 +47,6 @@ class KeywordQueryEventListener(EventListener):
         result = tex_to_unicode(data)
 
         if result:
-            result = normalize(result)
             items.append(ExtensionResultItem(icon='images/icon.png',
                                              name=result,
                                              description='Enter to copy to clipboard',
