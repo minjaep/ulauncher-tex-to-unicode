@@ -1,7 +1,7 @@
 {
   "required_api_version": "2",
-  "name": "TeX to Unicode extension",
-  "description":  "Convert a (La)TeX instruction, with the backslash, to Unicode",
+  "name": "TeX to Unicode",
+  "description":  "Convert a (La)TeX mathmode command to Unicode",
   "developer_name": "Cyprien Ruffino",
   "icon": "images/icon.png",
   "options": {
