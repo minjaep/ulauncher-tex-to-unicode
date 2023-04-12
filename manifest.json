@@ -1,0 +1,18 @@
+{
+  "required_api_version": "2",
+  "name": "TeX to Unicode extension",
+  "description":  "Convert a (La)TeX instruction, with the backslash, to Unicode",
+  "developer_name": "Cyprien Ruffino",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "TeX to Unicode keyword",
+      "default_value": "tex"
+    }
+  ]
+}
