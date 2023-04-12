@@ -13,13 +13,7 @@ import unicodedata
 
 
 def normalize(result):
-    return result
-    result = unicodedata.normalize("NFC", result)
-    result = re.sub(r"@NOT@\s*(\S)", "\\1" + self.COMBINING_LONG_SOLIDUS_OVERLAY, result)
-    result = result.replace("@NOT@", "")
-    result = unicodedata.normalize("NFC", result)
-    return result
-        
+    return result   
 
 def tex_to_unicode(data):
     stripped = data.strip()
