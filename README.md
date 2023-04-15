@@ -6,10 +6,11 @@ Convert (La)TeX mathmode commands to Unicode
 Most of the code comes from Manuel Schneider's similarely named plugin for Albert
 https://github.com/albertlauncher/python/blob/master/tex_to_unicode/
 
+Use unicodeit (https://github.com/svenkreiss/unicodeit) instead of pylatexenc
 
 ## Requirements
-pylatexenc
+unicodeit
 
 ```bash
-pip install pylatexenc --user
+pip install unicodeit
 ```

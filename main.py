@@ -8,27 +8,11 @@ from ulauncher.api.shared.action.RenderResultListAction import RenderResultListA
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from ulauncher.api.shared.action.CopyToClipboardAction import CopyToClipboardAction 
 from ulauncher.api.shared.action.DoNothingAction import DoNothingAction
-from pylatexenc.latex2text import LatexNodes2Text
-import unicodedata
+import unicodeit
 
 
 def tex_to_unicode(data):
-    stripped = data.strip()
-
-    if not stripped:
-        return
-
-    if not stripped.startswith("\\"):
-        stripped = "\\" + stripped
-
-    # Remove double backslashes (newlines)
-    stripped = stripped.replace("\\\\", " ")
-
-    # pylatexenc doesn't support \not
-    stripped = stripped.replace("\\not", "@NOT@")
-
-    n = LatexNodes2Text()
-    return n.latex_to_text(stripped)
+    return unicodeit.replace(data)
 
 
 class TexToUnicodeExtension(Extension):
