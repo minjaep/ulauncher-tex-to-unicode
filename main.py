@@ -12,6 +12,7 @@ import unicodeit
 
 
 def tex_to_unicode(data):
+    data = data[4:]
     return unicodeit.replace(data)
 
 
